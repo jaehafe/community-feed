@@ -1,0 +1,28 @@
+spring:
+
+  application:
+    name: communityFeed
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/community_feed?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456789
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        format_sql: true
+      open-in-view: false
+
+  jwt:
+    secret: thisisstatementskdkwkdkakdkwkdkakkwhdh12381723kjasdhkjashd1982y89ajksdbaskjdjkwhkjdahsdjk
+
+#  data:
+#    redis:
+#      host: localhost
+#      port: 6379
