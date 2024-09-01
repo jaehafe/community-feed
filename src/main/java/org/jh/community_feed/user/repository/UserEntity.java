@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.jh.community_feed.common.repository.entity.TimeBaseEntity;
 
 @Entity
 @Table(name = "community_user")
@@ -14,7 +15,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
-public class UserEntity {
+public class UserEntity extends TimeBaseEntity {
 
     @Id
     private Long id;
